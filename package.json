@@ -1,0 +1,17 @@
+{
+  "name": "car-selling-website",
+  "version": "1.0.0",
+  "description": "Car selling business website built from Relume wireframes and deployed on Webflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "relume",
+    "webflow",
+    "car-dealership",
+    "client-first"
+  ],
+  "author": "",
+  "license": "ISC"
+}
