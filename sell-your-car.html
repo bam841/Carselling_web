@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sell or Part-Exchange Your Car | Summit Motors</title>
+  <meta name="description" content="Get a fair, transparent valuation for your vehicle. We buy outright or trade in against any forecourt car with same-day payment and finance settlement." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container-large navbar-container">
+      <a href="index.html" class="nav-brand" aria-label="Summit Motors Home">
+        <span class="brand-badge">SM</span>
+        <span>Summit Motors</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="inventory.html" class="nav-link">Inventory</a></li>
+          <li><a href="sell-your-car.html" class="nav-link active">Sell Your Car</a></li>
+          <li><a href="finance.html" class="nav-link">Finance</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-book-drive">Book a test drive</button>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-nav-drawer">
+      <a href="inventory.html" class="nav-link">Inventory</a>
+      <a href="sell-your-car.html" class="nav-link active">Sell Your Car</a>
+      <a href="finance.html" class="nav-link">Finance</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <button class="btn btn-primary btn-full btn-book-drive" style="margin-top: 1rem;">Book a test drive</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-section section-tight" style="background-color: var(--color-neutral-lightest); border-bottom: 1px solid var(--color-neutral-light);">
+      <div class="container-large">
+        <div style="max-width: 760px;">
+          <span style="font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-brand-accent);">
+            Transparent Valuations
+          </span>
+          <h1 style="font-size: 2.75rem; line-height: 1.2; margin-top: 0.5rem; margin-bottom: 1rem;">
+            Sell or part-exchange your car with zero hassle
+          </h1>
+          <p style="color: var(--color-neutral-dark); font-size: 1.1rem; line-height: 1.6;">
+            We offer fair market valuations backed by live trade data. Sell outright for fast same-day bank payment, or trade in against any vehicle in our showroom.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container-large">
+        <div style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; align-items: start;">
+          
+          <!-- Valuation Form -->
+          <div class="calc-card" style="box-shadow: var(--shadow-lg);">
+            <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem;">Get Your Free Vehicle Valuation</h2>
+            <p style="color: var(--color-neutral-medium); font-size: 0.95rem; margin-bottom: 2rem;">
+              Fill in your car details for an instant indicative appraisal from our valuation desk.
+            </p>
+
+            <form id="valuation-form" style="display: flex; flex-direction: column; gap: 1.25rem;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                  <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Make &amp; Model</label>
+                  <input type="text" class="filter-input" style="width: 100%;" placeholder="e.g. Toyota Camry" required />
+                </div>
+                <div>
+                  <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Year of Manufacture</label>
+                  <input type="number" class="filter-input" style="width: 100%;" placeholder="e.g. 2021" min="2000" max="2026" required />
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                  <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Current Mileage (km/miles)</label>
+                  <input type="number" class="filter-input" style="width: 100%;" placeholder="e.g. 45000" required />
+                </div>
+                <div>
+                  <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Overall Condition</label>
+                  <select class="filter-select" style="width: 100%;">
+                    <option value="Excellent">Excellent (No dents, full service)</option>
+                    <option value="Good">Good (Minor stone chips, clean)</option>
+                    <option value="Fair">Fair (Scratches or due service)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Does the vehicle have outstanding finance?</label>
+                <div style="display: flex; gap: 1.5rem; margin-top: 0.5rem;">
+                  <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                    <input type="radio" name="finance-status" value="no" checked /> No, fully owned
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                    <input type="radio" name="finance-status" value="yes" /> Yes, financed (we settle it)
+                  </label>
+                </div>
+              </div>
+
+              <hr style="border: none; border-top: 1px solid var(--color-neutral-light); margin: 0.5rem 0;" />
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                  <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Your Name</label>
+                  <input type="text" class="filter-input" style="width: 100%;" placeholder="Full name" required />
+                </div>
+                <div>
+                  <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Contact Phone</label>
+                  <input type="tel" class="filter-input" style="width: 100%;" placeholder="+966 50 123 4567" required />
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="margin-top: 0.75rem;">
+                Request Fair Market Valuation
+              </button>
+            </form>
+          </div>
+
+          <!-- Benefits Side Column -->
+          <div style="display: flex; flex-direction: column; gap: 1.75rem;">
+            <div class="feature-box">
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Why sell to Summit Motors?</h3>
+              <ul style="display: flex; flex-direction: column; gap: 0.875rem; font-size: 0.95rem; color: var(--color-neutral-dark); list-style: none;">
+                <li style="display: flex; gap: 0.5rem; align-items: flex-start;">
+                  <span style="color: var(--color-success); font-weight: 700;">✓</span>
+                  <span><strong>Same-day bank transfer:</strong> No waiting for private buyers to arrange funds or loan approvals.</span>
+                </li>
+                <li style="display: flex; gap: 0.5rem; align-items: flex-start;">
+                  <span style="color: var(--color-success); font-weight: 700;">✓</span>
+                  <span><strong>Lender settlement:</strong> We contact your existing bank or finance company directly to clear all liens.</span>
+                </li>
+                <li style="display: flex; gap: 0.5rem; align-items: flex-start;">
+                  <span style="color: var(--color-success); font-weight: 700;">✓</span>
+                  <span><strong>Trade-in equity bonus:</strong> Apply your trade-in directly toward any vehicle on our forecourt.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="feature-box" style="background: #eff6ff; border-color: #bfdbfe;">
+              <h4 style="color: var(--color-brand-accent); margin-bottom: 0.5rem;">Forecourt Appraisal Walk-Ins Welcome</h4>
+              <p style="font-size: 0.925rem; color: var(--color-neutral-dark);">
+                Prefer an in-person physical inspection? Bring your vehicle, registration documents, and keys to King Fahd Road for a 15-minute appraisal.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container-large">
+      <div class="footer-grid">
+        <div>
+          <div class="nav-brand" style="color: #fff; margin-bottom: 1rem;">
+            <span class="brand-badge" style="background: #2563eb;">SM</span>
+            <span>Summit Motors</span>
+          </div>
+          <p style="font-size: 0.925rem; line-height: 1.6; max-width: 320px;">
+            Riyadh's premier destination for transparent used car sales, certified multi-point inspections, flexible finance and fair-value part-exchange.
+          </p>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="inventory.html">All Inventory</a></li>
+            <li><a href="inventory.html">Sedans & Saloons</a></li>
+            <li><a href="inventory.html">SUVs & 4x4s</a></li>
+            <li><a href="inventory.html">Trucks & Pickups</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="sell-your-car.html">Sell Your Car</a></li>
+            <li><a href="finance.html">Finance Calculator</a></li>
+            <li><a href="about.html">12-Month Warranty</a></li>
+            <li><a href="about.html">Vehicle Inspection</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Showroom</h4>
+          <p style="font-size: 0.925rem; margin-bottom: 0.5rem;">King Fahd Road, Al Muruj District, Riyadh 12345</p>
+          <p style="font-size: 0.925rem; margin-bottom: 1rem;">Phone: +966 11 234 5678</p>
+          <a href="contact.html" class="btn btn-secondary btn-sm" style="color: #0f172a; border: none;">Showroom Map &rarr;</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Summit Motors. All rights reserved.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Book Test Drive Modal Dialog -->
+  <div id="test-drive-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Book a Test Drive</h3>
+      <p style="color: var(--color-neutral-medium); font-size: 0.925rem; margin-bottom: 1.5rem;">Experience your next car on the road with no sales pressure.</p>
+
+      <form id="test-drive-form" style="display: flex; flex-direction: column; gap: 1rem;">
+        <div>
+          <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Selected Car</label>
+          <input type="text" id="modal-car-select" class="filter-input" style="width: 100%; background: #f8fafc;" readonly value="Selected Vehicle" />
+        </div>
+        <div>
+          <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Your Name</label>
+          <input type="text" id="modal-name" class="filter-input" style="width: 100%;" placeholder="Enter your full name" required />
+        </div>
+        <div style="grid-template-columns: 1fr 1fr; display: grid; gap: 1rem;">
+          <div>
+            <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Phone Number</label>
+            <input type="tel" class="filter-input" style="width: 100%;" placeholder="+966 50 123 4567" required />
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Preferred Date</label>
+            <input type="date" class="filter-input" style="width: 100%;" required />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" style="margin-top: 0.5rem;">Reserve Appointment</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initGlobalUI } from './scripts/app.js';
+    document.addEventListener('DOMContentLoaded', () => {
+      initGlobalUI();
+    });
+  </script>
+</body>
+</html>
