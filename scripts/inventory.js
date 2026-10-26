@@ -1,5 +1,5 @@
 /**
- * Summit Motors - Vehicle Inventory Engine
+ * MJCK - Vehicle Inventory Engine
  */
 
 let cachedCars = null;
@@ -18,18 +18,19 @@ export async function fetchCars() {
 }
 
 export function formatCurrency(amount) {
-  return new Intl.NumberFormat('en-US', {
+  return new Intl.NumberFormat('en-PH', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'PHP',
     maximumFractionDigits: 0
   }).format(amount);
 }
 
 export function formatNumber(val) {
-  return new Intl.NumberFormat('en-US').format(val);
+  return new Intl.NumberFormat('en-PH').format(val);
 }
 
 export function createCarCardHTML(car) {
+  const highlights = (car.features && car.features.length) ? car.features.slice(0, 2).join(' • ') : `${car.trim}`;
   return `
     <article class="car-card" data-id="${car.id}">
       <div class="car-card-img-wrapper">
@@ -38,14 +39,17 @@ export function createCarCardHTML(car) {
       </div>
       <div class="car-card-body">
         <h3 class="car-card-title">${car.name}</h3>
+        <p class="car-card-desc" style="font-size: 0.85rem; color: #475569 !important; margin-bottom: 0.75rem; line-height: 1.4;">
+          ${highlights}
+        </p>
         <div class="car-card-price-row">
           <span class="car-card-price">${formatCurrency(car.price)}</span>
-          <span class="car-card-monthly">Est. $${car.monthlyEstimate || Math.round(car.price / 60)}/mo</span>
+          <span class="car-card-monthly">Est. ${formatCurrency(car.monthlyEstimate || Math.round(car.price / 60))}/mo</span>
         </div>
         <div class="car-card-specs">
           <div class="spec-item">
             <span class="spec-label">Mileage</span>
-            <span class="spec-val">${formatNumber(car.mileage)} mi</span>
+            <span class="spec-val">${formatNumber(car.mileage)} km</span>
           </div>
           <div class="spec-item">
             <span class="spec-label">Fuel</span>

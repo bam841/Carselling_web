@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Car Finance &amp; Monthly Payments | Summit Motors</title>
-  <meta name="description" content="Calculate your vehicle finance payments with competitive fixed rates. Flexible deposits, transparent terms, and zero hidden admin charges." />
+  <title>Car Finance Calculator (PHP) | MJCK Motors</title>
+  <meta name="description" content="Calculate your vehicle finance payments in Philippine Pesos (PHP) with competitive fixed bank rates. Flexible down payments, transparent terms, and zero hidden admin charges at MJCK." />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,14 +12,14 @@
   
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
+<body class="bg-showroom-light">
 
   <!-- Navigation Bar -->
   <header class="navbar">
     <div class="container-large navbar-container">
-      <a href="index.html" class="nav-brand" aria-label="Summit Motors Home">
-        <span class="brand-badge">SM</span>
-        <span>Summit Motors</span>
+      <a href="index.html" class="nav-brand" aria-label="MJCK Motors Home">
+        <span class="brand-badge">MJCK</span>
+        <span>MJCK Motors</span>
       </a>
 
       <nav>
@@ -56,50 +56,52 @@
   </header>
 
   <main>
-    <section class="page-section section-tight" style="background-color: var(--color-neutral-lightest); border-bottom: 1px solid var(--color-neutral-light);">
-      <div class="container-large">
+    <section class="hero-automotive-bg page-section section-tight" style="padding-top: 4rem; padding-bottom: 4rem;">
+      <div class="container-large hero-content-wrapper">
         <div style="max-width: 760px;">
-          <span style="font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-brand-accent);">
-            Transparent Auto Finance
-          </span>
-          <h1 style="font-size: 2.75rem; line-height: 1.2; margin-top: 0.5rem; margin-bottom: 1rem;">
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(37, 99, 235, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); padding: 0.25rem 0.75rem; border-radius: var(--radius-full); margin-bottom: 0.75rem;">
+            <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #93c5fd;">
+              TRANSPARENT VEHICLE FINANCING (PHP)
+            </span>
+          </div>
+          <h1 style="font-size: 2.75rem; line-height: 1.2; margin-bottom: 1rem; color: #ffffff;">
             Affordable monthly payments tailored to your budget
           </h1>
-          <p style="color: var(--color-neutral-dark); font-size: 1.1rem; line-height: 1.6;">
-            We partner with leading regional banks and lenders to secure competitive fixed rates, rapid approvals, and terms up to 60 months with zero hidden brokerage fees.
+          <p class="subtext" style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.6;">
+            We partner with premier Philippine banks and automotive lenders to offer competitive fixed rates, rapid approvals, and terms up to 60 months with zero hidden brokerage charges.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Calculator Section -->
+    <!-- Calculator Section with Carbon Texture Frame -->
     <section class="page-section">
       <div class="container-large">
-        <div class="calc-card" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3.5rem; align-items: center;">
+        <div class="calc-card" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3.5rem; align-items: center; box-shadow: var(--shadow-xl);">
           <div>
-            <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Interactive Finance Calculator</h2>
+            <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Auto Loan Calculator in PHP</h2>
             <p style="color: var(--color-neutral-medium); margin-bottom: 2rem;">Adjust the parameters below to compute your estimated monthly repayment.</p>
 
             <div class="calc-range-wrapper">
               <div class="calc-label-row">
-                <span>Vehicle Price:</span>
-                <span id="calc-price-val" style="color: var(--color-brand-accent); font-weight: 700;">$25,000</span>
+                <span>Vehicle Price (PHP):</span>
+                <span id="calc-price-val" style="color: var(--color-brand-accent); font-weight: 800;">₱1,250,000</span>
               </div>
-              <input type="range" id="calc-price" min="10000" max="100000" step="1000" value="25000" />
+              <input type="range" id="calc-price" min="300000" max="6000000" step="50000" value="1250000" />
             </div>
 
             <div class="calc-range-wrapper">
               <div class="calc-label-row">
-                <span>Deposit Contribution (%):</span>
-                <span id="calc-deposit-val" style="color: var(--color-brand-accent); font-weight: 700;">20% ($5,000)</span>
+                <span>Down Payment Contribution:</span>
+                <span id="calc-deposit-val" style="color: var(--color-brand-accent); font-weight: 800;">20% (₱250,000)</span>
               </div>
-              <input type="range" id="calc-deposit" min="0" max="50" step="5" value="20" />
+              <input type="range" id="calc-deposit" min="10" max="50" step="5" value="20" />
             </div>
 
             <div class="calc-range-wrapper">
               <div class="calc-label-row">
                 <span>Loan Duration:</span>
-                <span id="calc-term-val" style="color: var(--color-brand-accent); font-weight: 700;">48 months</span>
+                <span id="calc-term-val" style="color: var(--color-brand-accent); font-weight: 800;">48 months</span>
               </div>
               <input type="range" id="calc-term" min="12" max="60" step="12" value="48" />
             </div>
@@ -107,69 +109,69 @@
             <div class="calc-range-wrapper" style="margin-bottom: 0;">
               <div class="calc-label-row">
                 <span>Annual Percentage Rate (APR):</span>
-                <span style="color: var(--color-brand-accent); font-weight: 700;">4.9% Fixed</span>
+                <span style="color: var(--color-brand-accent); font-weight: 800;">5.5% Fixed Bank Rate</span>
               </div>
-              <input type="hidden" id="calc-rate" value="4.9" />
+              <input type="hidden" id="calc-rate" value="5.5" />
             </div>
           </div>
 
           <div class="calc-result-box">
-            <span style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; color: #94a3b8;">Monthly Repayment</span>
-            <div id="calc-result" class="calc-amount">$459</div>
-            <span style="font-size: 0.95rem; color: #cbd5e1;">per month based on 4.9% APR</span>
+            <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: #94a3b8;">Monthly Repayment</span>
+            <div id="calc-result" class="calc-amount">₱23,178</div>
+            <span style="font-size: 0.95rem; color: #cbd5e1;">per month based on 5.5% APR</span>
 
-            <div style="margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid #334155; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem; color: #94a3b8;">
+            <div style="margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.12); display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem; color: #94a3b8;">
               <div style="display: flex; justify-content: space-between;">
                 <span>Total Amount Payable:</span>
-                <strong id="calc-total" style="color: #ffffff;">$27,032</strong>
+                <strong id="calc-total" style="color: #ffffff;">₱1,362,544</strong>
               </div>
               <div style="display: flex; justify-content: space-between;">
-                <span>Documentation Fee:</span>
-                <strong style="color: #4ade80;">$0 (Free)</strong>
+                <span>Dealer Documentation Fee:</span>
+                <strong style="color: #4ade80;">₱0 (Free)</strong>
               </div>
             </div>
 
-            <a href="inventory.html" class="btn btn-accent btn-full" style="margin-top: 2rem;">Find Cars Within This Budget</a>
+            <a href="inventory.html" class="btn btn-primary btn-full" style="margin-top: 2rem;">Find Cars Within This Budget</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Finance Products Comparison -->
-    <section class="page-section bg-light">
+    <section class="page-section bg-carbon">
       <div class="container-large">
         <div style="text-align: center; max-width: 650px; margin: 0 auto 3.5rem auto;">
-          <h2 style="font-size: 2.25rem; margin-bottom: 0.75rem;">Flexible Financing Options</h2>
-          <p style="color: var(--color-neutral-medium);">Choose the purchasing method that best aligns with your financial plan.</p>
+          <h2 style="font-size: 2.25rem; margin-bottom: 0.75rem; color: #ffffff;">Flexible Purchasing Pathways</h2>
+          <p style="color: #94a3b8;">Choose the financing method that best aligns with your financial plan.</p>
         </div>
 
         <div class="features-grid">
           <div class="feature-box">
-            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Hire Purchase (HP)</h3>
-            <p style="color: var(--color-neutral-dark); font-size: 0.95rem; margin-bottom: 1.25rem;">Spread the cost of your car over 12 to 60 fixed monthly payments. Once the final payment is cleared, you own the car 100%.</p>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Bank Auto Loan</h3>
+            <p style="color: var(--color-neutral-dark); font-size: 0.95rem; margin-bottom: 1.25rem;">Spread the cost over 12 to 60 equal monthly installments in PHP with our verified partner banks.</p>
             <ul style="font-size: 0.875rem; color: var(--color-neutral-dark); display: flex; flex-direction: column; gap: 0.5rem; list-style: none;">
-              <li>✓ Fixed interest rate for entire term</li>
-              <li>✓ No end-of-contract balloon payments</li>
-              <li>✓ Low initial deposit options available</li>
+              <li>✓ Fixed interest rate for the full duration</li>
+              <li>✓ Rapid pre-qualification processing</li>
+              <li>✓ As low as 20% down payment accepted</li>
             </ul>
           </div>
 
           <div class="feature-box">
-            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Part-Exchange Equity</h3>
-            <p style="color: var(--color-neutral-dark); font-size: 0.95rem; margin-bottom: 1.25rem;">Use your existing vehicle as the complete deposit on your next car. We handle all lender payoff settlements.</p>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Trade-In Down Payment</h3>
+            <p style="color: var(--color-neutral-dark); font-size: 0.95rem; margin-bottom: 1.25rem;">Use your existing vehicle as the complete down payment on your next car. We handle all existing bank settlements.</p>
             <ul style="font-size: 0.875rem; color: var(--color-neutral-dark); display: flex; flex-direction: column; gap: 0.5rem; list-style: none;">
-              <li>✓ No out-of-pocket deposit needed</li>
-              <li>✓ Settle existing finance seamlessly</li>
-              <li>✓ Drive away the same afternoon</li>
+              <li>✓ Zero cash out of pocket options</li>
+              <li>✓ Settle remaining bank balance seamlessly</li>
+              <li>✓ Drive home the same afternoon</li>
             </ul>
           </div>
 
           <div class="feature-box">
-            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Direct Outright Purchase</h3>
-            <p style="color: var(--color-neutral-dark); font-size: 0.95rem; margin-bottom: 1.25rem;">Simple, transparent cash or direct bank transfer pricing with full warranty, inspection, and transfer assistance included.</p>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Direct Cash / Transfer</h3>
+            <p style="color: var(--color-neutral-dark); font-size: 0.95rem; margin-bottom: 1.25rem;">Simple, transparent cash or manager's check pricing with full 12-month warranty, inspection, and transfer assistance.</p>
             <ul style="font-size: 0.875rem; color: var(--color-neutral-dark); display: flex; flex-direction: column; gap: 0.5rem; list-style: none;">
-              <li>✓ Zero interest or finance charges</li>
-              <li>✓ Immediate title transfer</li>
+              <li>✓ Zero financing charges or interest</li>
+              <li>✓ Immediate title and CR/OR transfer</li>
               <li>✓ 12 months' warranty included</li>
             </ul>
           </div>
@@ -184,11 +186,11 @@
       <div class="footer-grid">
         <div>
           <div class="nav-brand" style="color: #fff; margin-bottom: 1rem;">
-            <span class="brand-badge" style="background: #2563eb;">SM</span>
-            <span>Summit Motors</span>
+            <span class="brand-badge">MJCK</span>
+            <span>MJCK Motors</span>
           </div>
           <p style="font-size: 0.925rem; line-height: 1.6; max-width: 320px;">
-            Riyadh's premier destination for transparent used car sales, certified multi-point inspections, flexible finance and fair-value part-exchange.
+            The premier destination for transparent used car sales, certified multi-point inspections, flexible bank finance in PHP and fair-value part-exchange.
           </p>
         </div>
 
@@ -214,14 +216,14 @@
 
         <div>
           <h4>Showroom</h4>
-          <p style="font-size: 0.925rem; margin-bottom: 0.5rem;">King Fahd Road, Al Muruj District, Riyadh 12345</p>
-          <p style="font-size: 0.925rem; margin-bottom: 1rem;">Phone: +966 11 234 5678</p>
-          <a href="contact.html" class="btn btn-secondary btn-sm" style="color: #0f172a; border: none;">Showroom Map &rarr;</a>
+          <p style="font-size: 0.925rem; margin-bottom: 0.5rem;">MJCK Flagship Showroom, Main Commercial Highway, Metro Manila</p>
+          <p style="font-size: 0.925rem; margin-bottom: 1rem;">Phone: +63 2 8123 4567</p>
+          <a href="contact.html" class="btn btn-secondary btn-sm" style="border: none;">Showroom Map &rarr;</a>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Summit Motors. All rights reserved.</div>
+        <div>&copy; 2026 MJCK Motors. All rights reserved.</div>
         <div style="display: flex; gap: 1.5rem;">
           <a href="about.html">Privacy Policy</a>
           <a href="about.html">Terms of Service</a>
@@ -250,7 +252,7 @@
         <div style="grid-template-columns: 1fr 1fr; display: grid; gap: 1rem;">
           <div>
             <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Phone Number</label>
-            <input type="tel" class="filter-input" style="width: 100%;" placeholder="+966 50 123 4567" required />
+            <input type="tel" class="filter-input" style="width: 100%;" placeholder="+63 917 123 4567" required />
           </div>
           <div>
             <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Preferred Date</label>

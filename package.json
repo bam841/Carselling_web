@@ -1,18 +1,20 @@
 {
-  "name": "car-selling-website",
+  "name": "mjck-motors",
   "version": "1.0.0",
-  "description": "Car selling business website built from Relume wireframes and deployed on Webflow",
+  "description": "MJCK Motors - Car selling business website built from Relume wireframes and styled for high-end dealership",
   "main": "index.js",
   "scripts": {
     "start": "npx serve . -l 3000",
     "test": "node scripts/verify-site.js"
   },
   "keywords": [
+    "mjck",
+    "mjck-motors",
     "relume",
     "webflow",
     "car-dealership",
     "client-first"
   ],
-  "author": "Summit Motors",
+  "author": "MJCK Motors",
   "license": "ISC"
 }

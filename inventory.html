@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Used Cars for Sale | Summit Motors Inventory</title>
-  <meta name="description" content="Browse every car in stock with full photos, mileage, spec, service history and price. Filter by budget, body type and fuel, then book a test drive." />
+  <title>Used Cars for Sale in PHP | MJCK Motors Inventory</title>
+  <meta name="description" content="Browse every car in stock with full photos, mileage, spec, service history and price in PHP. Filter by budget, body type and fuel, then book a test drive at MJCK." />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,14 +12,14 @@
   
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
+<body class="bg-showroom-light">
 
   <!-- Navigation Bar -->
   <header class="navbar">
     <div class="container-large navbar-container">
-      <a href="index.html" class="nav-brand" aria-label="Summit Motors Home">
-        <span class="brand-badge">SM</span>
-        <span>Summit Motors</span>
+      <a href="index.html" class="nav-brand" aria-label="MJCK Motors Home">
+        <span class="brand-badge">MJCK</span>
+        <span>MJCK Motors</span>
       </a>
 
       <nav>
@@ -56,12 +56,17 @@
   </header>
 
   <main>
-    <section class="page-section section-tight" style="background-color: var(--color-neutral-lightest); border-bottom: 1px solid var(--color-neutral-light);">
-      <div class="container-large">
+    <section class="hero-automotive-bg page-section section-tight" style="padding-top: 4rem; padding-bottom: 4rem;">
+      <div class="container-large hero-content-wrapper">
         <div style="max-width: 720px;">
-          <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Used Cars for Sale</h1>
-          <p style="color: var(--color-neutral-dark); font-size: 1.05rem;">
-            Browse our inspected forecourt inventory. All cars include independent history verification, multi-point check, and 12 months' warranty.
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(37, 99, 235, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); padding: 0.25rem 0.75rem; border-radius: var(--radius-full); margin-bottom: 0.75rem;">
+            <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #93c5fd;">
+              CURRENT SHOWROOM INVENTORY
+            </span>
+          </div>
+          <h1 style="font-size: 2.75rem; margin-bottom: 0.75rem; color: #ffffff;">Quality Pre-Owned Cars in Stock</h1>
+          <p class="subtext" style="color: #cbd5e1; font-size: 1.05rem;">
+            Explore our verified collection with full service records, guaranteed clear title, and 12-month comprehensive warranty included in all PHP prices.
           </p>
         </div>
       </div>
@@ -72,7 +77,7 @@
         
         <!-- Filter and Search Toolbar -->
         <div class="filter-bar">
-          <input type="text" id="search-input" class="filter-input filter-search" placeholder="Search by make, model, or keywords (e.g. Camry, SUV, AWD)..." />
+          <input type="text" id="search-input" class="filter-input filter-search" placeholder="Search by make, model, or keywords (e.g. Camry, SUV, 4WD)..." />
 
           <select id="make-filter" class="filter-select">
             <option value="all">All Makes</option>
@@ -94,18 +99,18 @@
 
           <select id="sort-select" class="filter-select">
             <option value="featured">Sort: Featured</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
+            <option value="price-asc">Price (PHP): Low to High</option>
+            <option value="price-desc">Price (PHP): High to Low</option>
             <option value="mileage-asc">Lowest Mileage</option>
             <option value="year-desc">Newest Year</option>
           </select>
 
-          <button id="reset-filters-btn" class="btn btn-secondary btn-sm" style="margin-left: auto;">Reset</button>
+          <button id="reset-filters-btn" class="btn btn-light-secondary btn-sm" style="margin-left: auto;">Reset</button>
         </div>
 
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.75rem;">
-          <span id="cars-count" style="font-weight: 600; color: var(--color-neutral-dark);">Loading inventory...</span>
-          <span style="font-size: 0.85rem; color: var(--color-neutral-medium);">Updated daily from Riyadh forecourt</span>
+          <span id="cars-count" style="font-weight: 700; color: var(--color-brand-primary);">Loading inventory...</span>
+          <span style="font-size: 0.85rem; color: var(--color-neutral-medium);">All prices displayed in Philippine Peso (PHP)</span>
         </div>
 
         <!-- Inventory Grid -->
@@ -123,11 +128,11 @@
       <div class="footer-grid">
         <div>
           <div class="nav-brand" style="color: #fff; margin-bottom: 1rem;">
-            <span class="brand-badge" style="background: #2563eb;">SM</span>
-            <span>Summit Motors</span>
+            <span class="brand-badge">MJCK</span>
+            <span>MJCK Motors</span>
           </div>
           <p style="font-size: 0.925rem; line-height: 1.6; max-width: 320px;">
-            Riyadh's premier destination for transparent used car sales, certified multi-point inspections, flexible finance and fair-value part-exchange.
+            The premier destination for transparent used car sales, certified multi-point inspections, flexible bank finance in PHP and fair-value part-exchange.
           </p>
         </div>
 
@@ -153,14 +158,14 @@
 
         <div>
           <h4>Showroom</h4>
-          <p style="font-size: 0.925rem; margin-bottom: 0.5rem;">King Fahd Road, Al Muruj District, Riyadh 12345</p>
-          <p style="font-size: 0.925rem; margin-bottom: 1rem;">Phone: +966 11 234 5678</p>
-          <a href="contact.html" class="btn btn-secondary btn-sm" style="color: #0f172a; border: none;">Showroom Map &rarr;</a>
+          <p style="font-size: 0.925rem; margin-bottom: 0.5rem;">MJCK Flagship Showroom, Main Commercial Highway, Metro Manila</p>
+          <p style="font-size: 0.925rem; margin-bottom: 1rem;">Phone: +63 2 8123 4567</p>
+          <a href="contact.html" class="btn btn-secondary btn-sm" style="border: none;">Showroom Map &rarr;</a>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Summit Motors. All rights reserved.</div>
+        <div>&copy; 2026 MJCK Motors. All rights reserved.</div>
         <div style="display: flex; gap: 1.5rem;">
           <a href="about.html">Privacy Policy</a>
           <a href="about.html">Terms of Service</a>
@@ -189,7 +194,7 @@
         <div style="grid-template-columns: 1fr 1fr; display: grid; gap: 1rem;">
           <div>
             <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Phone Number</label>
-            <input type="tel" class="filter-input" style="width: 100%;" placeholder="+966 50 123 4567" required />
+            <input type="tel" class="filter-input" style="width: 100%;" placeholder="+63 917 123 4567" required />
           </div>
           <div>
             <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Preferred Date</label>

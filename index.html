@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Summit Motors | Quality Used Cars, Finance &amp; Part-Exchange</title>
-  <meta name="description" content="Browse hand-picked used cars with full history, warranty and transparent pricing. Book a test drive, get finance in minutes, or part-exchange your current car." />
+  <title>MJCK Motors | Quality Used Cars, Finance &amp; Part-Exchange</title>
+  <meta name="description" content="Browse hand-picked used cars with full history, warranty and transparent pricing in PHP. Book a test drive, get finance in minutes, or part-exchange your current car at MJCK." />
   
   <!-- Fonts: Manrope (Headings) & Inter (Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,9 +19,9 @@
   <!-- Navigation Bar -->
   <header class="navbar">
     <div class="container-large navbar-container">
-      <a href="index.html" class="nav-brand" aria-label="Summit Motors Home">
-        <span class="brand-badge">SM</span>
-        <span>Summit Motors</span>
+      <a href="index.html" class="nav-brand" aria-label="MJCK Motors Home">
+        <span class="brand-badge">MJCK</span>
+        <span>MJCK Motors</span>
       </a>
 
       <nav>
@@ -58,31 +58,41 @@
   </header>
 
   <main>
-    <!-- Section 1: Hero & Featured Inventory -->
-    <section class="page-section" style="padding-top: 4rem;">
-      <div class="container-large">
-        <div style="max-width: 780px; margin-bottom: 3.5rem;">
-          <span style="display: inline-block; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-brand-accent); margin-bottom: 0.75rem;">
-            Used cars, finance and part-exchange
-          </span>
-          <h1 style="font-size: clamp(2.25rem, 5vw, 3.75rem); line-height: 1.15; margin-bottom: 1.25rem;">
+    <!-- Section 1: Hero Showroom Banner -->
+    <section class="hero-automotive-bg page-section" style="padding-top: 5rem; padding-bottom: 5.5rem;">
+      <div class="container-large hero-content-wrapper">
+        <div style="max-width: 800px;">
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(37, 99, 235, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); padding: 0.35rem 0.85rem; border-radius: var(--radius-full); margin-bottom: 1.25rem;">
+            <span style="display: inline-block; width: 8px; height: 8px; background: #38bdf8; border-radius: 50%; box-shadow: 0 0 8px #38bdf8;"></span>
+            <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #93c5fd;">
+              MJCK MOTORS • PRE-OWNED EXCELLENCE
+            </span>
+          </div>
+
+          <h1 style="font-size: clamp(2.35rem, 5.5vw, 4rem); line-height: 1.15; margin-bottom: 1.35rem; font-weight: 800; letter-spacing: -0.02em;">
             Good used cars, checked properly, priced honestly
           </h1>
-          <p style="font-size: 1.15rem; color: var(--color-neutral-dark); line-height: 1.7; margin-bottom: 2rem;">
-            Browse hand-picked used cars with full history, warranty and transparent pricing. Book a test drive, get finance in minutes, or part-exchange your current car.
+          <p class="subtext" style="font-size: 1.15rem; line-height: 1.7; margin-bottom: 2.25rem; max-width: 680px;">
+            Browse hand-picked vehicles with verified full service histories, 12 months' warranty, and transparent pricing in PHP. Book a test drive, calculate monthly finance, or part-exchange your car today.
           </p>
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
             <a href="inventory.html" class="btn btn-primary btn-lg">Browse Inventory</a>
-            <button class="btn btn-secondary btn-lg btn-book-drive">Book a test drive</button>
+            <button class="btn btn-secondary btn-lg btn-book-drive">Book a Test Drive</button>
           </div>
         </div>
+      </div>
+    </section>
 
+    <!-- Section 2: In Stock Now Featured Cars -->
+    <section class="page-section bg-showroom-light" style="padding-top: 4rem; padding-bottom: 4rem; border-bottom: 1px solid var(--color-neutral-light);">
+      <div class="container-large">
         <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
           <div>
-            <h2 style="font-size: 1.85rem; margin-bottom: 0.25rem;">In stock now</h2>
-            <p style="color: var(--color-neutral-medium);">Hand-picked vehicles ready for immediate delivery.</p>
+            <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-brand-accent);">Verified Forecourt Models</span>
+            <h2 style="font-size: 2rem; margin-top: 0.25rem; margin-bottom: 0.25rem; color: var(--color-neutral-darkest);">In stock now</h2>
+            <p style="color: var(--color-neutral-medium);">Hand-picked vehicles ready for immediate delivery across the Philippines.</p>
           </div>
-          <a href="inventory.html" class="btn btn-secondary btn-sm" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+          <a href="inventory.html" class="btn btn-light-secondary btn-sm" style="display: inline-flex; align-items: center; gap: 0.35rem;">
             See full inventory &rarr;
           </a>
         </div>
@@ -94,12 +104,12 @@
       </div>
     </section>
 
-    <!-- Section 2: 3 Guarantees -->
-    <section class="page-section bg-light">
+    <!-- Section 2: 3 Guarantees with Showroom Floor Texture -->
+    <section class="page-section bg-showroom-light">
       <div class="container-large">
         <div style="text-align: center; max-width: 680px; margin: 0 auto 3.5rem auto;">
-          <h2 style="font-size: 2.25rem; margin-bottom: 1rem;">Every car here comes with the same three things</h2>
-          <p style="color: var(--color-neutral-medium); font-size: 1.05rem;">We remove the usual used-car friction with strict standards, comprehensive warranties, and transparent quotes.</p>
+          <h2 style="font-size: 2.25rem; margin-bottom: 1rem;">Every car at MJCK comes with the same three things</h2>
+          <p style="color: var(--color-neutral-medium); font-size: 1.05rem;">We eliminate the guesswork with strict mechanical standards, guaranteed title verification, and all-in quotes.</p>
         </div>
 
         <div class="features-grid">
@@ -110,7 +120,7 @@
               </svg>
             </div>
             <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">A full history check</h3>
-            <p style="color: var(--color-neutral-dark); font-size: 0.95rem;">Every vehicle undergoes independent HPI, mileage verification, and structural inspection before being placed on the forecourt.</p>
+            <p style="color: var(--color-neutral-dark); font-size: 0.95rem;">Every vehicle undergoes verified LTO/HPG clearance, mileage verification, and structural chassis inspection before joining our forecourt.</p>
           </div>
 
           <div class="feature-box">
@@ -121,7 +131,7 @@
               </svg>
             </div>
             <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">12 months' warranty</h3>
-            <p style="color: var(--color-neutral-dark); font-size: 0.95rem;">Drive away with complete confidence knowing engine, transmission, electricals and major mechanical systems are covered.</p>
+            <p style="color: var(--color-neutral-dark); font-size: 0.95rem;">Drive away with complete peace of mind knowing engine, transmission, ECU, and major electrical systems are backed by our warranty.</p>
           </div>
 
           <div class="feature-box">
@@ -131,117 +141,117 @@
                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
               </svg>
             </div>
-            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">One price, all in</h3>
-            <p style="color: var(--color-neutral-dark); font-size: 0.95rem;">No surprise documentation fees, hidden dealer prep charges, or checkout add-ons. What you see is what you pay.</p>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">One price in PHP, all in</h3>
+            <p style="color: var(--color-neutral-dark); font-size: 0.95rem;">No surprise dealer documentation fees, processing surcharges, or hidden prep charges. What you see is the exact figure you pay.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 3: Buying Process (3-Steps) -->
-    <section class="page-section">
+    <!-- Section 3: Buying Process with Racing Accent Glow -->
+    <section class="page-section bg-racing-accents">
       <div class="container-large">
         <div style="max-width: 600px; margin-bottom: 3.5rem;">
-          <span style="font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-brand-accent);">How it works</span>
-          <h2 style="font-size: 2.25rem; margin-top: 0.5rem; margin-bottom: 0.75rem;">How buying a car from us works</h2>
-          <p style="color: var(--color-neutral-medium);">From first look to driving off the forecourt in three straightforward steps.</p>
+          <span style="font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-brand-accent);">How it works</span>
+          <h2 style="font-size: 2.25rem; margin-top: 0.5rem; margin-bottom: 0.75rem;">How buying a car from MJCK works</h2>
+          <p style="color: var(--color-neutral-medium);">From your first look online to driving off the forecourt in three straightforward steps.</p>
         </div>
 
         <div class="process-grid">
           <div class="process-step">
             <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Browse and shortlist</h3>
-            <p style="color: var(--color-neutral-dark); font-size: 0.95rem;">Filter by budget, fuel type, and body style. Check transparent specs, maintenance history, and estimated monthly payments.</p>
+            <p style="color: var(--color-neutral-dark); font-size: 0.95rem;">Filter by budget in PHP, fuel type, and body style. Check verified maintenance logs and transparent monthly payment estimates.</p>
           </div>
 
           <div class="process-step">
             <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Come and drive it</h3>
-            <p style="color: var(--color-neutral-dark); font-size: 0.95rem;">Book a hassle-free test drive. Take it on city streets or open highways with zero pushy sales pressure.</p>
+            <p style="color: var(--color-neutral-dark); font-size: 0.95rem;">Schedule a zero-obligation test drive. Experience the car on open roads with non-commissioned vehicle specialists.</p>
           </div>
 
           <div class="process-step">
             <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Agree it and drive away</h3>
-            <p style="color: var(--color-neutral-dark); font-size: 0.95rem;">Pick your payment method or finance package, complete part-exchange paperwork in 15 minutes, and collect the keys.</p>
+            <p style="color: var(--color-neutral-dark); font-size: 0.95rem;">Select your preferred bank financing or direct cash settlement, finalize ownership transfer in 20 minutes, and collect the keys.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 4: Finance Estimator Widget -->
-    <section class="page-section bg-light">
+    <!-- Section 4: Auto Finance Calculator with Carbon Fiber Background -->
+    <section class="page-section bg-carbon">
       <div class="container-large">
-        <div class="calc-card" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3rem; align-items: center;">
+        <div class="calc-card" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3.5rem; align-items: center; border: 1px solid rgba(255, 255, 255, 0.15);">
           <div>
-            <span style="font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-brand-accent);">Instant Calculator</span>
-            <h2 style="font-size: 2.25rem; margin-top: 0.5rem; margin-bottom: 1rem;">Work out the monthly figure before you choose the car</h2>
-            <p style="color: var(--color-neutral-dark); font-size: 1rem; margin-bottom: 2rem;">Adjust the vehicle budget and deposit percentage to find the monthly repayment that suits your lifestyle.</p>
+            <span style="font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-brand-accent);">Instant Calculator</span>
+            <h2 style="font-size: 2.25rem; margin-top: 0.5rem; margin-bottom: 1rem; color: var(--color-neutral-darkest);">Work out the monthly figure before you choose the car</h2>
+            <p style="color: var(--color-neutral-dark); font-size: 1rem; margin-bottom: 2rem;">Adjust the vehicle price in Philippine Pesos (PHP) and down payment to compute realistic monthly installments.</p>
 
             <div class="calc-range-wrapper">
               <div class="calc-label-row">
                 <span>Vehicle Budget:</span>
-                <span id="calc-price-val" style="color: var(--color-brand-accent); font-weight: 700;">$25,000</span>
+                <span id="calc-price-val" style="color: var(--color-brand-accent); font-weight: 800;">₱1,250,000</span>
               </div>
-              <input type="range" id="calc-price" min="10000" max="100000" step="1000" value="25000" />
+              <input type="range" id="calc-price" min="300000" max="6000000" step="50000" value="1250000" />
             </div>
 
             <div class="calc-range-wrapper">
               <div class="calc-label-row">
-                <span>Deposit Contribution:</span>
-                <span id="calc-deposit-val" style="color: var(--color-brand-accent); font-weight: 700;">15% ($3,750)</span>
+                <span>Down Payment Contribution:</span>
+                <span id="calc-deposit-val" style="color: var(--color-brand-accent); font-weight: 800;">20% (₱250,000)</span>
               </div>
-              <input type="range" id="calc-deposit" min="5" max="50" step="5" value="15" />
+              <input type="range" id="calc-deposit" min="10" max="50" step="5" value="20" />
             </div>
 
             <div class="calc-range-wrapper">
               <div class="calc-label-row">
-                <span>Loan Duration:</span>
-                <span id="calc-term-val" style="color: var(--color-brand-accent); font-weight: 700;">48 months</span>
+                <span>Financing Term:</span>
+                <span id="calc-term-val" style="color: var(--color-brand-accent); font-weight: 800;">48 months</span>
               </div>
               <input type="range" id="calc-term" min="12" max="60" step="12" value="48" />
             </div>
           </div>
 
           <div class="calc-result-box">
-            <span style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; color: #94a3b8;">Estimated Payment</span>
-            <div id="calc-result" class="calc-amount">$488</div>
-            <span style="font-size: 0.95rem; color: #cbd5e1;">per month (4.9% fixed APR)</span>
+            <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: #94a3b8;">Estimated Installment</span>
+            <div id="calc-result" class="calc-amount">₱23,178</div>
+            <span style="font-size: 0.95rem; color: #cbd5e1;">per month (5.5% fixed bank APR)</span>
 
-            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #334155; font-size: 0.875rem; color: #94a3b8; display: flex; justify-content: space-between;">
+            <div style="margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.12); font-size: 0.875rem; color: #94a3b8; display: flex; justify-content: space-between;">
               <span>Total Payable:</span>
-              <strong id="calc-total" style="color: #ffffff;">$27,174</strong>
+              <strong id="calc-total" style="color: #ffffff;">₱1,362,544</strong>
             </div>
 
-            <a href="finance.html" class="btn btn-accent btn-full" style="margin-top: 1.75rem;">Explore Finance Options</a>
+            <a href="finance.html" class="btn btn-primary btn-full" style="margin-top: 1.75rem;">Explore Finance Options</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Section 5: Customer Testimonials -->
-    <section class="page-section">
+    <section class="page-section bg-showroom-light">
       <div class="container-large">
         <div style="text-align: center; max-width: 600px; margin: 0 auto 3.5rem auto;">
-          <h2 style="font-size: 2.25rem; margin-bottom: 0.75rem;">What buyers say afterwards</h2>
-          <p style="color: var(--color-neutral-medium);">Over 1,200 drivers have purchased their vehicles from Summit Motors.</p>
+          <h2 style="font-size: 2.25rem; margin-bottom: 0.75rem;">What drivers say about MJCK</h2>
+          <p style="color: var(--color-neutral-medium);">Over 1,200 satisfied drivers have chosen MJCK Motors for their vehicles.</p>
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
           <div class="feature-box">
             <div style="color: #f59e0b; font-size: 1.1rem; margin-bottom: 0.75rem;">★★★★★</div>
-            <p style="color: var(--color-neutral-darkest); font-style: italic; margin-bottom: 1.25rem;">"The whole experience was refreshingly simple. No hard upsells, the car had a full inspection report, and driving away took less than 45 minutes."</p>
+            <p style="color: var(--color-neutral-darkest); font-style: italic; margin-bottom: 1.25rem;">"The whole experience was refreshingly simple. No hard upsells, the car had a complete inspection report, and driving away took less than 45 minutes."</p>
             <strong>Omar A.</strong>
             <div style="font-size: 0.85rem; color: var(--color-neutral-medium);">Purchased 2021 Hyundai Tucson</div>
           </div>
 
           <div class="feature-box">
             <div style="color: #f59e0b; font-size: 1.1rem; margin-bottom: 0.75rem;">★★★★★</div>
-            <p style="color: var(--color-neutral-darkest); font-style: italic; margin-bottom: 1.25rem;">"I traded in my Camry with remaining finance. Summit Motors handled the lender settlement directly and gave me a very fair valuation."</p>
+            <p style="color: var(--color-neutral-darkest); font-style: italic; margin-bottom: 1.25rem;">"I traded in my old sedan with remaining bank balance. MJCK handled the bank payoff directly and gave me a very fair valuation in PHP."</p>
             <strong>Sarah K.</strong>
             <div style="font-size: 0.85rem; color: var(--color-neutral-medium);">Purchased 2022 Mercedes C300</div>
           </div>
 
           <div class="feature-box">
             <div style="color: #f59e0b; font-size: 1.1rem; margin-bottom: 0.75rem;">★★★★★</div>
-            <p style="color: var(--color-neutral-darkest); font-style: italic; margin-bottom: 1.25rem;">"The 12-month warranty gave me total peace of mind. Had an alternator sensor trigger 3 months in—repaired the next morning at zero cost."</p>
+            <p style="color: var(--color-neutral-darkest); font-style: italic; margin-bottom: 1.25rem;">"The 12-month warranty gave me total peace of mind. Had an alternator sensor trigger 3 months in—repaired the next morning with zero extra charge."</p>
             <strong>Fahad M.</strong>
             <div style="font-size: 0.85rem; color: var(--color-neutral-medium);">Purchased 2019 Toyota Hilux</div>
           </div>
@@ -250,17 +260,17 @@
     </section>
 
     <!-- Section 6: FAQ Accordion -->
-    <section class="page-section bg-light">
+    <section class="page-section">
       <div class="container-medium">
         <div style="text-align: center; margin-bottom: 3.5rem;">
           <h2 style="font-size: 2.25rem; margin-bottom: 0.75rem;">Questions buyers ask before they commit</h2>
-          <p style="color: var(--color-neutral-medium);">Honest answers to the most common questions about buying, warranty, and trade-ins.</p>
+          <p style="color: var(--color-neutral-medium);">Honest answers to the most common questions about buying, warranty, and trade-ins at MJCK.</p>
         </div>
 
         <div class="faq-list">
           <div class="faq-item active">
             <button class="faq-question">
-              <span>What does the warranty actually cover?</span>
+              <span>What does the 12-month warranty actually cover?</span>
               <span class="faq-icon">&#9660;</span>
             </button>
             <div class="faq-answer">
@@ -274,27 +284,27 @@
               <span class="faq-icon">&#9660;</span>
             </button>
             <div class="faq-answer">
-              <p>Yes, absolutely. We welcome independent inspections by your mechanic or any third-party automotive inspection service. We can accommodate ramp inspections on our forecourt by appointment.</p>
+              <p>Yes, absolutely. We welcome independent inspections by your mechanic or any accredited automotive inspection technician. We accommodate ramp inspections on our forecourt by appointment.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question">
-              <span>The car I want to trade in still has finance on it. Can you still take it?</span>
+              <span>The car I want to trade in still has bank finance on it. Can you still take it?</span>
               <span class="faq-icon">&#9660;</span>
             </button>
             <div class="faq-answer">
-              <p>Yes. We regularly handle part-exchanges with outstanding finance. We obtain the settlement figure directly from your finance company and deduct it from your new car purchase or refund you the difference.</p>
+              <p>Yes. We regularly handle part-exchanges with outstanding bank balance. We obtain the settlement figure directly from your financing bank, clear the balance, and apply your equity toward your new car.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question">
-              <span>Is the price on the website the price I actually pay?</span>
+              <span>Is the price on the website the price I actually pay in PHP?</span>
               <span class="faq-icon">&#9660;</span>
             </button>
             <div class="faq-answer">
-              <p>Yes. We adhere to a strict 'One Price, All In' policy. The price shown on our website includes the full vehicle inspection, 12 months' comprehensive warranty, transfer documentation, and thorough sanitization.</p>
+              <p>Yes. We adhere to a strict 'One Price, All In' policy. The price in PHP shown on our website includes the full 150-point inspection, 12 months' comprehensive warranty, transfer documentation, and thorough detailing.</p>
             </div>
           </div>
         </div>
@@ -302,42 +312,42 @@
     </section>
 
     <!-- Section 7: Forecourt & Test Drive Scheduler -->
-    <section class="page-section">
+    <section class="page-section bg-showroom-light">
       <div class="container-large">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start;">
           <div>
-            <span style="font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-brand-accent);">Visit Us</span>
-            <h2 style="font-size: 2.25rem; margin-top: 0.5rem; margin-bottom: 1.25rem;">Find the forecourt</h2>
-            <p style="color: var(--color-neutral-dark); margin-bottom: 2rem;">Stop by our showroom to inspect cars in person, take a test drive, or discuss trade-in options with our non-commissioned vehicle specialists.</p>
+            <span style="font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-brand-accent);">Visit Us</span>
+            <h2 style="font-size: 2.25rem; margin-top: 0.5rem; margin-bottom: 1.25rem;">Find the MJCK showroom</h2>
+            <p style="color: var(--color-neutral-dark); margin-bottom: 2rem;">Stop by our dealership to inspect cars in person, take an unaccompanied test drive, or discuss trade-in options with our team.</p>
 
             <div style="display: flex; flex-direction: column; gap: 1.5rem;">
               <div style="display: flex; gap: 1rem; align-items: flex-start;">
-                <div style="width: 2.5rem; height: 2.5rem; background: #eff6ff; color: var(--color-brand-accent); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <div style="width: 2.75rem; height: 2.75rem; background: #eff6ff; color: var(--color-brand-accent); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 </div>
                 <div>
                   <h4 style="margin-bottom: 0.25rem;">Visit the forecourt</h4>
-                  <p style="color: var(--color-neutral-medium); font-size: 0.95rem;">King Fahd Road, Al Muruj District, Riyadh 12345</p>
+                  <p style="color: var(--color-neutral-medium); font-size: 0.95rem;">MJCK Flagship Showroom, Main Commercial Highway, Metro Manila</p>
                 </div>
               </div>
 
               <div style="display: flex; gap: 1rem; align-items: flex-start;">
-                <div style="width: 2.5rem; height: 2.5rem; background: #eff6ff; color: var(--color-brand-accent); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <div style="width: 2.75rem; height: 2.75rem; background: #eff6ff; color: var(--color-brand-accent); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 </div>
                 <div>
                   <h4 style="margin-bottom: 0.25rem;">Talk to someone</h4>
-                  <p style="color: var(--color-neutral-medium); font-size: 0.95rem;">+966 11 234 5678 • sales@summitmotors.com</p>
+                  <p style="color: var(--color-neutral-medium); font-size: 0.95rem;">+63 2 8123 4567 • sales@mjckmotors.com</p>
                 </div>
               </div>
 
               <div style="display: flex; gap: 1rem; align-items: flex-start;">
-                <div style="width: 2.5rem; height: 2.5rem; background: #eff6ff; color: var(--color-brand-accent); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <div style="width: 2.75rem; height: 2.75rem; background: #eff6ff; color: var(--color-brand-accent); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                 </div>
                 <div>
                   <h4 style="margin-bottom: 0.25rem;">Opening hours</h4>
-                  <p style="color: var(--color-neutral-medium); font-size: 0.95rem;">Saturday - Thursday: 9:00 AM – 9:00 PM<br/>Friday: 4:00 PM – 9:00 PM</p>
+                  <p style="color: var(--color-neutral-medium); font-size: 0.95rem;">Monday - Saturday: 8:30 AM – 8:00 PM<br/>Sunday: 10:00 AM – 6:00 PM</p>
                 </div>
               </div>
             </div>
@@ -351,12 +361,12 @@
             <form id="contact-form" style="display: flex; flex-direction: column; gap: 1rem;">
               <div>
                 <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Full Name</label>
-                <input type="text" class="filter-input" style="width: 100%;" placeholder="e.g. Abdullah Al-Mansoor" required />
+                <input type="text" class="filter-input" style="width: 100%;" placeholder="e.g. Juan Dela Cruz" required />
               </div>
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                 <div>
                   <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Phone Number</label>
-                  <input type="tel" class="filter-input" style="width: 100%;" placeholder="+966 50 123 4567" required />
+                  <input type="tel" class="filter-input" style="width: 100%;" placeholder="+63 917 123 4567" required />
                 </div>
                 <div>
                   <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Preferred Date</label>
@@ -367,10 +377,10 @@
                 <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Vehicle of Interest</label>
                 <select class="filter-select" style="width: 100%;">
                   <option value="Any Available Car">Any Available Car / Consultation</option>
-                  <option value="2020 Toyota Camry GLE 2.5">2020 Toyota Camry GLE 2.5</option>
-                  <option value="2021 Hyundai Tucson Smart 1.6T">2021 Hyundai Tucson Smart 1.6T</option>
-                  <option value="2019 Toyota Hilux Double Cab 2.7">2019 Toyota Hilux Double Cab 2.7</option>
-                  <option value="2022 Nissan Patrol SE 4.0">2022 Nissan Patrol SE 4.0</option>
+                  <option value="2020 Toyota Camry GLE 2.5">2020 Toyota Camry GLE 2.5 (₱1,280,000)</option>
+                  <option value="2021 Hyundai Tucson Smart 1.6T">2021 Hyundai Tucson Smart 1.6T (₱1,390,000)</option>
+                  <option value="2019 Toyota Hilux Double Cab 2.7">2019 Toyota Hilux Double Cab 2.7 (₱1,180,000)</option>
+                  <option value="2022 Nissan Patrol SE 4.0">2022 Nissan Patrol SE 4.0 (₱3,650,000)</option>
                 </select>
               </div>
               <button type="submit" class="btn btn-primary btn-lg" style="margin-top: 0.5rem;">Confirm Test Drive Appointment</button>
@@ -387,11 +397,11 @@
       <div class="footer-grid">
         <div>
           <div class="nav-brand" style="color: #fff; margin-bottom: 1rem;">
-            <span class="brand-badge" style="background: #2563eb;">SM</span>
-            <span>Summit Motors</span>
+            <span class="brand-badge">MJCK</span>
+            <span>MJCK Motors</span>
           </div>
           <p style="font-size: 0.925rem; line-height: 1.6; max-width: 320px;">
-            Riyadh's premier destination for transparent used car sales, certified multi-point inspections, flexible finance and fair-value part-exchange.
+            The premier destination for transparent used car sales, certified multi-point inspections, flexible bank finance in PHP and fair-value part-exchange.
           </p>
         </div>
 
@@ -417,14 +427,14 @@
 
         <div>
           <h4>Showroom</h4>
-          <p style="font-size: 0.925rem; margin-bottom: 0.5rem;">King Fahd Road, Al Muruj District, Riyadh 12345</p>
-          <p style="font-size: 0.925rem; margin-bottom: 1rem;">Phone: +966 11 234 5678</p>
-          <a href="contact.html" class="btn btn-secondary btn-sm" style="color: #0f172a; border: none;">Showroom Map &rarr;</a>
+          <p style="font-size: 0.925rem; margin-bottom: 0.5rem;">MJCK Flagship Showroom, Main Commercial Highway, Metro Manila</p>
+          <p style="font-size: 0.925rem; margin-bottom: 1rem;">Phone: +63 2 8123 4567</p>
+          <a href="contact.html" class="btn btn-secondary btn-sm" style="border: none;">Showroom Map &rarr;</a>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Summit Motors. All rights reserved.</div>
+        <div>&copy; 2026 MJCK Motors. All rights reserved.</div>
         <div style="display: flex; gap: 1.5rem;">
           <a href="about.html">Privacy Policy</a>
           <a href="about.html">Terms of Service</a>
@@ -453,7 +463,7 @@
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
           <div>
             <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Phone Number</label>
-            <input type="tel" class="filter-input" style="width: 100%;" placeholder="+966 50 123 4567" required />
+            <input type="tel" class="filter-input" style="width: 100%;" placeholder="+63 917 123 4567" required />
           </div>
           <div>
             <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Preferred Date</label>

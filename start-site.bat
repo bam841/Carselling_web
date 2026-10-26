@@ -1,10 +1,10 @@
 @echo off
-title Summit Motors Web Server
+title MJCK Motors Web Server
 echo ========================================================
-echo         SUMMIT MOTORS - LOCAL DEV SERVER
+echo            MJCK MOTORS - LOCAL DEV SERVER
 echo ========================================================
 echo.
-echo Opening website in your default web browser...
+echo Opening MJCK Motors in your default browser...
 start http://localhost:3000
 echo.
 echo Server is running on http://localhost:3000

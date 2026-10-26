@@ -1,5 +1,5 @@
 /**
- * Summit Motors - Auto Finance Calculator
+ * MJCK - Auto Finance Calculator (PHP Currency)
  */
 
 export function calculateMonthlyPayment(principal, annualRatePercent, months) {
@@ -15,6 +15,14 @@ export function calculateMonthlyPayment(principal, annualRatePercent, months) {
                   (Math.pow(1 + monthlyRate, months) - 1);
                   
   return Math.round(payment);
+}
+
+export function formatPHP(amount) {
+  return new Intl.NumberFormat('en-PH', {
+    style: 'currency',
+    currency: 'PHP',
+    maximumFractionDigits: 0
+  }).format(amount);
 }
 
 export function initFinanceCalculator({
@@ -42,10 +50,10 @@ export function initFinanceCalculator({
   if (!priceInput || !resultDisplay) return;
 
   function update() {
-    const price = parseFloat(priceInput.value) || 25000;
-    const depositPercent = depositInput ? parseFloat(depositInput.value) : 15;
+    const price = parseFloat(priceInput.value) || 1250000;
+    const depositPercent = depositInput ? parseFloat(depositInput.value) : 20;
     const termMonths = termInput ? parseInt(termInput.value, 10) : 48;
-    const interestRate = rateInput ? parseFloat(rateInput.value) : 4.9;
+    const interestRate = rateInput ? parseFloat(rateInput.value) : 5.5;
 
     const depositAmount = Math.round(price * (depositPercent / 100));
     const loanPrincipal = Math.max(0, price - depositAmount);
@@ -53,12 +61,12 @@ export function initFinanceCalculator({
     const monthlyPayment = calculateMonthlyPayment(loanPrincipal, interestRate, termMonths);
     const totalCost = (monthlyPayment * termMonths) + depositAmount;
 
-    if (priceDisplay) priceDisplay.textContent = `$${price.toLocaleString()}`;
-    if (depositDisplay) depositDisplay.textContent = `${depositPercent}% ($${depositAmount.toLocaleString()})`;
+    if (priceDisplay) priceDisplay.textContent = formatPHP(price);
+    if (depositDisplay) depositDisplay.textContent = `${depositPercent}% (${formatPHP(depositAmount)})`;
     if (termDisplay) termDisplay.textContent = `${termMonths} months`;
 
-    resultDisplay.textContent = `$${monthlyPayment.toLocaleString()}`;
-    if (totalDisplay) totalDisplay.textContent = `$${totalCost.toLocaleString()}`;
+    resultDisplay.textContent = formatPHP(monthlyPayment);
+    if (totalDisplay) totalDisplay.textContent = formatPHP(totalCost);
   }
 
   [priceInput, depositInput, termInput, rateInput].forEach(elem => {

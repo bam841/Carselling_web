@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vehicle Details | Summit Motors</title>
+  <title>Vehicle Details | MJCK Motors</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,14 +11,14 @@
   
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
+<body class="bg-showroom-light">
 
   <!-- Navigation Bar -->
   <header class="navbar">
     <div class="container-large navbar-container">
-      <a href="index.html" class="nav-brand" aria-label="Summit Motors Home">
-        <span class="brand-badge">SM</span>
-        <span>Summit Motors</span>
+      <a href="index.html" class="nav-brand" aria-label="MJCK Motors Home">
+        <span class="brand-badge">MJCK</span>
+        <span>MJCK Motors</span>
       </a>
 
       <nav>
@@ -56,14 +56,14 @@
 
   <main>
     <!-- Breadcrumb & Top Bar -->
-    <div style="background-color: var(--color-neutral-lightest); border-bottom: 1px solid var(--color-neutral-light); padding: 1rem 0;">
+    <div style="background-color: #ffffff; border-bottom: 1px solid var(--color-neutral-light); padding: 1rem 0;">
       <div class="container-large">
         <div style="display: flex; gap: 0.5rem; align-items: center; font-size: 0.875rem; color: var(--color-neutral-medium);">
           <a href="index.html" style="color: var(--color-neutral-dark);">Home</a>
           <span>/</span>
           <a href="inventory.html" style="color: var(--color-neutral-dark);">Inventory</a>
           <span>/</span>
-          <span id="breadcrumb-car-name" style="color: var(--color-brand-accent); font-weight: 600;">Loading...</span>
+          <span id="breadcrumb-car-name" style="color: var(--color-brand-accent); font-weight: 700;">Loading...</span>
         </div>
       </div>
     </div>
@@ -74,7 +74,7 @@
         <div id="car-detail-container" style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; align-items: start;">
           <!-- Left Column: Gallery & In-Depth Specs -->
           <div>
-            <div style="border-radius: var(--radius-md); overflow: hidden; background: #e2e8f0; height: 440px; margin-bottom: 1rem;">
+            <div style="border-radius: var(--radius-md); overflow: hidden; background: #0f172a; height: 440px; margin-bottom: 1rem; box-shadow: var(--shadow-automotive);">
               <img id="detail-main-img" src="" alt="Car Image" style="width: 100%; height: 100%; object-fit: cover;" />
             </div>
 
@@ -84,7 +84,7 @@
             </div>
 
             <!-- Highlights -->
-            <div style="margin-bottom: 3rem;">
+            <div style="margin-bottom: 3rem;" class="feature-box">
               <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem;">Key Vehicle Highlights</h3>
               <div id="detail-features-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.875rem;">
                 <!-- Features populated by JS -->
@@ -92,7 +92,7 @@
             </div>
 
             <!-- Full Tech Specs Table -->
-            <div>
+            <div class="feature-box">
               <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem;">Technical Specifications</h3>
               <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
                 <tbody id="detail-specs-table">
@@ -102,34 +102,34 @@
             </div>
           </div>
 
-          <!-- Right Column: Pricing, Finance & Booking Card -->
+          <!-- Right Column: Pricing in PHP, Finance & Booking Card -->
           <div style="display: flex; flex-direction: column; gap: 2rem;">
             
-            <div class="calc-card" style="padding: 2rem;">
+            <div class="calc-card" style="padding: 2.25rem;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
                 <div>
                   <span id="detail-year-body" class="car-card-badge" style="position: static; display: inline-block; margin-bottom: 0.5rem;"></span>
-                  <h1 id="detail-car-title" style="font-size: 1.85rem; line-height: 1.25;"></h1>
+                  <h1 id="detail-car-title" style="font-size: 1.95rem; line-height: 1.25;"></h1>
                 </div>
               </div>
 
               <div style="padding: 1.25rem 0; border-top: 1px solid var(--color-neutral-light); border-bottom: 1px solid var(--color-neutral-light); margin-bottom: 1.5rem;">
                 <div style="display: flex; align-items: baseline; justify-content: space-between;">
-                  <span id="detail-price" style="font-size: 2.25rem; font-weight: 800; color: var(--color-neutral-darkest);">$0</span>
-                  <span id="detail-monthly" style="font-size: 1rem; color: var(--color-brand-accent); font-weight: 600;">Est. $0/mo</span>
+                  <span id="detail-price" style="font-size: 2.25rem; font-weight: 800; color: var(--color-brand-primary);">₱0</span>
+                  <span id="detail-monthly" style="font-size: 1rem; color: var(--color-brand-accent); font-weight: 700;">Est. ₱0/mo</span>
                 </div>
-                <div style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--color-success); font-weight: 600; display: flex; align-items: center; gap: 0.35rem;">
-                  ✓ Transparent Price • 12-Month Warranty Included • No Admin Fees
+                <div style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--color-success); font-weight: 700; display: flex; align-items: center; gap: 0.35rem;">
+                  ✓ Transparent PHP Price • 12-Month Warranty Included • No Hidden Fees
                 </div>
               </div>
 
               <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem;">
                 <button id="detail-book-btn" class="btn btn-primary btn-lg btn-full">Book a Test Drive</button>
-                <a href="finance.html" class="btn btn-secondary btn-full">Calculate Finance Plan</a>
+                <a href="finance.html" class="btn btn-light-secondary btn-full">Calculate Finance Plan</a>
               </div>
 
               <div style="font-size: 0.875rem; color: var(--color-neutral-medium); text-align: center;">
-                Available for viewing at King Fahd Road Forecourt
+                Available for viewing at MJCK Flagship Showroom
               </div>
             </div>
 
@@ -137,13 +137,13 @@
             <div class="feature-box" style="padding: 1.75rem;">
               <h4 style="margin-bottom: 0.5rem;">Have questions about this car?</h4>
               <p style="color: var(--color-neutral-medium); font-size: 0.9rem; margin-bottom: 1rem;">
-                Speak directly with our vehicle specialist regarding service history, part-exchange valuation or same-day reservations.
+                Speak directly with an MJCK vehicle specialist regarding service logs, trade-in valuation, or same-day reservations.
               </p>
-              <div style="font-weight: 600; color: var(--color-neutral-darkest); font-size: 1rem; margin-bottom: 0.5rem;">
-                📞 +966 11 234 5678
+              <div style="font-weight: 700; color: var(--color-neutral-darkest); font-size: 1rem; margin-bottom: 0.5rem;">
+                📞 +63 2 8123 4567
               </div>
               <div style="font-size: 0.875rem; color: var(--color-neutral-medium);">
-                Open 9:00 AM – 9:00 PM (Sat - Thu)
+                Open Monday - Saturday 8:30 AM – 8:00 PM
               </div>
             </div>
 
@@ -160,11 +160,11 @@
       <div class="footer-grid">
         <div>
           <div class="nav-brand" style="color: #fff; margin-bottom: 1rem;">
-            <span class="brand-badge" style="background: #2563eb;">SM</span>
-            <span>Summit Motors</span>
+            <span class="brand-badge">MJCK</span>
+            <span>MJCK Motors</span>
           </div>
           <p style="font-size: 0.925rem; line-height: 1.6; max-width: 320px;">
-            Riyadh's premier destination for transparent used car sales, certified multi-point inspections, flexible finance and fair-value part-exchange.
+            The premier destination for transparent used car sales, certified multi-point inspections, flexible bank finance in PHP and fair-value part-exchange.
           </p>
         </div>
 
@@ -190,14 +190,14 @@
 
         <div>
           <h4>Showroom</h4>
-          <p style="font-size: 0.925rem; margin-bottom: 0.5rem;">King Fahd Road, Al Muruj District, Riyadh 12345</p>
-          <p style="font-size: 0.925rem; margin-bottom: 1rem;">Phone: +966 11 234 5678</p>
-          <a href="contact.html" class="btn btn-secondary btn-sm" style="color: #0f172a; border: none;">Showroom Map &rarr;</a>
+          <p style="font-size: 0.925rem; margin-bottom: 0.5rem;">MJCK Flagship Showroom, Main Commercial Highway, Metro Manila</p>
+          <p style="font-size: 0.925rem; margin-bottom: 1rem;">Phone: +63 2 8123 4567</p>
+          <a href="contact.html" class="btn btn-secondary btn-sm" style="border: none;">Showroom Map &rarr;</a>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 Summit Motors. All rights reserved.</div>
+        <div>&copy; 2026 MJCK Motors. All rights reserved.</div>
         <div style="display: flex; gap: 1.5rem;">
           <a href="about.html">Privacy Policy</a>
           <a href="about.html">Terms of Service</a>
@@ -226,7 +226,7 @@
         <div style="grid-template-columns: 1fr 1fr; display: grid; gap: 1rem;">
           <div>
             <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Phone Number</label>
-            <input type="tel" class="filter-input" style="width: 100%;" placeholder="+966 50 123 4567" required />
+            <input type="tel" class="filter-input" style="width: 100%;" placeholder="+63 917 123 4567" required />
           </div>
           <div>
             <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.35rem;">Preferred Date</label>
@@ -253,12 +253,12 @@
 
       if (!car) return;
 
-      document.title = `${car.name} | Summit Motors`;
+      document.title = `${car.name} | MJCK Motors`;
       document.getElementById('breadcrumb-car-name').textContent = car.name;
       document.getElementById('detail-car-title').textContent = car.name;
       document.getElementById('detail-year-body').textContent = `${car.year} • ${car.bodyStyle}`;
       document.getElementById('detail-price').textContent = formatCurrency(car.price);
-      document.getElementById('detail-monthly').textContent = `Est. $${car.monthlyEstimate || Math.round(car.price/60)}/mo`;
+      document.getElementById('detail-monthly').textContent = `Est. ${formatCurrency(car.monthlyEstimate || Math.round(car.price/60))}/mo`;
 
       const mainImg = document.getElementById('detail-main-img');
       mainImg.src = car.image;
@@ -286,14 +286,14 @@
       featuresList.innerHTML = (car.features || []).map(feat => `
         <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.95rem;">
           <span style="color: var(--color-success); font-weight: 700;">✓</span>
-          <span>${feat}</span>
+          <span style="color: #0f172a !important; font-weight: 600;">${feat}</span>
         </div>
       `).join('');
 
       // Tech Specs Table
       const specsTable = document.getElementById('detail-specs-table');
       const specsData = [
-        ['Mileage', `${formatNumber(car.mileage)} miles`],
+        ['Mileage', `${formatNumber(car.mileage)} km`],
         ['Engine', car.engine || 'Standard'],
         ['Horsepower', `${car.horsepower} hp`],
         ['Transmission', car.transmission],
@@ -301,7 +301,7 @@
         ['Fuel Type', car.fuelType],
         ['Exterior Color', car.exteriorColor],
         ['Interior Color', car.interiorColor],
-        ['VIN Number', car.vin || 'Verified Available'],
+        ['VIN Number', car.vin || 'HPG / LTO Cleared'],
         ['Warranty', '12 Months Comprehensive Included']
       ];
 
