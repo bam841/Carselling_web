@@ -57,10 +57,48 @@ export function initGlobalUI() {
   const mobileDrawer = document.getElementById('mobile-drawer');
 
   if (mobileToggle && mobileDrawer) {
-    mobileToggle.addEventListener('click', () => {
-      mobileDrawer.classList.toggle('open');
-      const isOpen = mobileDrawer.classList.contains('open');
-      mobileToggle.setAttribute('aria-expanded', isOpen);
+    const closeDrawer = () => {
+      mobileDrawer.classList.remove('open');
+      mobileToggle.classList.remove('active');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    };
+
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const willOpen = !mobileDrawer.classList.contains('open');
+      mobileDrawer.classList.toggle('open', willOpen);
+      mobileToggle.classList.toggle('active', willOpen);
+      mobileToggle.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+      document.body.style.overflow = willOpen ? 'hidden' : '';
+    });
+
+    // Close when tapping any link inside drawer
+    mobileDrawer.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('click', () => {
+        closeDrawer();
+      });
+    });
+
+    // Close when tapping outside drawer
+    document.addEventListener('click', (e) => {
+      if (mobileDrawer.classList.contains('open') && !mobileDrawer.contains(e.target) && !mobileToggle.contains(e.target)) {
+        closeDrawer();
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileDrawer.classList.contains('open')) {
+        closeDrawer();
+      }
+    });
+
+    // Close on window resize above mobile breakpoint
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && mobileDrawer.classList.contains('open')) {
+        closeDrawer();
+      }
     });
   }
 
