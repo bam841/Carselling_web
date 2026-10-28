@@ -247,6 +247,10 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.navbar nav {
+  margin-left: auto;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -291,6 +295,10 @@ img {
   cursor: pointer;
   padding: 0.5rem;
   color: #ffffff;
+}
+
+.mobile-nav-drawer {
+  display: none;
 }
 
 /* Button System */
